@@ -1,10 +1,12 @@
 function Members() {
-    return ;
+
+    const json = fetch("./SHS.json")
+        .then(response => response.json())
+        .then(json => console.log(response))
+    let data = json.Members
+
+    return <div>data</div>
+
 }
 
 export default Members;
-
-
-$.getJSON("test.json", function(json) {
-    console.log(json); // this will show the info it in firebug console
-});
